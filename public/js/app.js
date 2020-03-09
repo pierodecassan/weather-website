@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e)=>{
     message2.textContent='';
     image.src = '';
 image.style.display='none';
-    fetch('http://localhost:3000/weather?address='+locationx).then((response)=>{
+    fetch('/weather?address='+locationx).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             message.textContent = data.error;
