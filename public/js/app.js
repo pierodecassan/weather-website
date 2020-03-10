@@ -22,7 +22,7 @@ image.style.display='none';
             message.textContent = data.error;
         } else{
             message.textContent = data.location;
-            message2.textContent = data.forecast.summary;
+            message2.textContent = data.forecast.summary+" min. "+data.forecast.temperatureLow+" Max."+data.forecast.temperatureHi;
             image.src = 'https://darksky.net/images/weather-icons/'+data.forecast.icon+'.png';
             image.style.display='inline';
 
