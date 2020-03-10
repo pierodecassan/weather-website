@@ -14,6 +14,12 @@ img{
     display:none;
     vertical-align:middle;
 }
+
+.main-content img{
+    width:320px;
+    height:320px;
+    display:block;
+}
 .main-content{
     flex: 1;
 }
